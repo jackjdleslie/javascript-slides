@@ -1,4 +1,4 @@
-# The Weird Parts of JavaScript
+# JavaScript Demystified
 
 > An introduction to JavaScript on the web and an explanation of JavaScript versions and why we need tools like Babel
 
