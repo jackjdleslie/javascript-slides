@@ -1,5 +1,6 @@
 import { Head, Notes } from "mdx-deck";
 import { yellow } from "mdx-deck/themes";
+import { Layout } from './components';
 
 export const themes = [yellow];
 
@@ -13,7 +14,7 @@ export const themes = [yellow];
 
 ---
 
-### In this talk
+<Layout title="In this talk">
 
 - A history of JS
   - _Netscape and Java_
@@ -23,6 +24,81 @@ export const themes = [yellow];
   - _ECMA and TC39_
 - JS today
   - _Babel and ESM_
+
+</Layout>
+
+---
+
+<Layout title="Why?">
+
+- JavaScript has a weird history, and a confusing versioning process
+- Especially since we're more used to Java, which has very obvious versioning and target
+- But once you've grasped JavaScript, you can use JavaScript anywhere
+
+</Layout>
+
+<Notes>
+
+Weird history and confusing versioning process
+- Without understanding where it came from, it kind of seems like JavaScript came from nowhere and just happens
+to be supported everywhere inconsistently, but there are reasons for this.
+- Also, why is it called JavaScript? And come to think of it, what version is JavaScript and what version am I using
+when I use Node?
+- This is all stuff that doesn't directly need answered when writing JavaScript, but helps so much when you
+know what's going on.
+
+We are more used to Java
+- At uni, we've all used Java. Whatever you think of the Java language, it has a pretty straight forward versioning process and target.
+Every major update of Java bumps the version number up, and when you compile Java you are targeting the JVM - simple. Java is like PS3 -> PS4 -> PS5,
+JavaScript is like Xbox One S -> Xbox One X -> Xbox Series X
+
+- JavaScript anywhere
+- Once you know what JavaScript is, and what you're targeting when you're writing in different environments, you can
+write a full stack in one language.
+- Regardless of how you feel about the language itself, it's a great thing to know if you want to iterate quickly or create an MVP,
+and is amazing for hackathons.
+
+</Notes>
+
+---
+
+<Layout title="A history of JS">
+
+- Netscape thought HTML needed a "glue language" to add interactivity to web pages
+- They added LiveScript to Netscape Navigator in 1995
+- They changed the name to JavaScript to build up hype and compete with Microsoft
+- In 1996, Netscape submitted JavaScript to ECMA to form a standard specification for other browsers to use
+- In 1997, ECMA-262 was published.
+
+</Layout>
+
+<Notes>
+
+Netscape "glue language"
+- Various languages were considered for this. 
+- Netscape actually collaborated with Sun Microsystems who were developing Java
+to make it the scripting language for browsers
+- The original creator of JavaScript was originally contracted to
+integrate Scheme into Netscape.
+
+LiveScript
+- This has a similar syntax to Java, and would help drive more developers to use this rather than Microsoft
+- A key feature of the language was keeping it as open as possible, not focusing on any particular paradigm
+
+JavaScript
+- They decided to fully steer into the Java hype and really wanted to compete with Microsoft, even though
+it doesn't really have anything to do with Java other than some similar syntax back in the day
+
+ECMA
+- To promote the usage of JavaScript and steer away from proprietary browser languages, Netscape submitted JavaScript
+to the ECMA (European association for standardizing information and communication systems) to get standardised.
+
+ECMA-262
+- It was published as a standard in 1997, ECMAScript is a specification for building a language that is supported by
+all major browsers.
+
+
+</Notes>
 
 ---
 
