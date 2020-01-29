@@ -115,6 +115,44 @@ all major browsers.
 
 ---
 
+<Layout title="How JS works">
+
+- JavaScript is a scripting language, you are going to act on an existing entity
+- This entity is the JavaScript runtime that you choose to target
+- The JavaScript runtime can be the browser, or can be server-side
+- In the browser, you are interacting with APIs provided by the browser, e.g window
+- In the server, you are interacting with APIs provided by Node.js, e.g file system
+
+</Layout>
+
+<Notes>
+
+JavaScript is a scripting language
+- The reason you want to use JavaScript is because you want to interact with some existing
+entity through some APIs.
+
+JavaScript runtime
+- When we say entity, we're referring to the JavaScript runtime that we're going to use.
+- This runtime is going to provide APIs for us to interact with
+
+Browser or server-side
+- Depending on which runtime we choose, we'll get a different set of APIs
+- If you're a front-end developer, you're working with APIs provided by browsers
+- If you're a back-end developer, you're working with APIs provided by the server-side environment
+
+Browser
+- Browsers provide a lot of APIs to work with, the most common ones being window and document
+- For example, perform some scripting functionality when a document has loaded
+
+Server
+- To work outside of the browser, we use Node.js.
+- There are no web pages to work with on the server side, so we don't get access to things like document or window
+- Instead, we get APIs for things like the file system, or to work with network protocols like http
+
+</Notes>
+
+---
+
 ## Cheers!
 
 ### View the code for these slides:
