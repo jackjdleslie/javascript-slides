@@ -120,7 +120,7 @@ all major browsers.
 - JavaScript is a scripting language, you are going to act on an existing entity
 - This entity is the JavaScript runtime that you choose to target
 - The JavaScript runtime can be the browser, or can be server-side
-- In the browser, you are interacting with APIs provided by the browser, e.g window
+- In the browser, you are interacting with APIs provided by the browser, e.g document
 - In the server, you are interacting with APIs provided by Node.js, e.g file system
 
 </Layout>
@@ -141,13 +141,31 @@ Browser or server-side
 - If you're a back-end developer, you're working with APIs provided by the server-side environment
 
 Browser
-- Browsers provide a lot of APIs to work with, the most common ones being window and document
+- Browsers provide a lot of APIs to work with, the most common ones being document and window
 - For example, perform some scripting functionality when a document has loaded
 
 Server
 - To work outside of the browser, we use Node.js.
 - There are no web pages to work with on the server side, so we don't get access to things like document or window
 - Instead, we get APIs for things like the file system, or to work with network protocols like http
+
+</Notes>
+
+---
+
+<Layout title="How JS works: in the browser">
+
+- When a web page is loaded, the browser creates a Document Object Model (DOM)
+- The HTML DOM defines the HTML elements as a tree of objects
+- The browser provides the <code>document</code> interface to interact with the DOM tree
+- With JavaScript you can change the content and style of HTML elements
+- You can also react to HTML DOM events, e.g on a button click perform some action
+
+</Layout>
+
+<Notes>
+
+TODO: add script for this section
 
 </Notes>
 
